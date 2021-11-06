@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Ruberoid';
+    src: url("/assets/fonts/public/Ruberoid.otf");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("/assets/fonts/public/Montserrat-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/public/Montserrat-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/public/Montserrat-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
