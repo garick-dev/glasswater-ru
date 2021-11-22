@@ -1,0 +1,183 @@
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #29C4FD;
+    text-align: center;
+    padding-bottom: 60px;
+
+}
+.subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    color: #29C4FD;
+}
+.text {
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+
+.portfolio-content .text:last-child{
+    padding: 0;
+}
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+.portfolio__header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.portfolio__prev {
+    display: inline-flex;
+    align-items: center;
+}
+.portfolio__prev span {
+    display: inline-block;
+    padding-left: 20px;
+    color: #29C4FD;
+}
+
+.portfolio__prev svg path{
+    fill: #29C4FD;
+    transition: 0.2s ease-in;
+}
+.portfolio__prev:hover {
+    cursor: pointer;
+}
+.portfolio__prev:hover path {
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: #29C4FD;
+}
+
+.title_header {
+    margin-top: -30px;
+
+}
+.portfolio-content__text {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*//////////////SLIDER/////////////////*/
+.glide__slides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glide__slide {
+    list-style: none;
+    transition: 0.2s ease-in;
+}
+.glide__slide {
+    filter: blur(10px);
+    transform: scale(0.8);
+}
+.glide__slide--active {
+    transform: scale(1);
+    filter: blur(0px);
+}
+.portfolio-slider {
+    max-width: 1920px;
+    overflow: hidden;
+}
+.portfolio-slider__inner {
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
+.portfolio-slider__item img {
+    display: inline-block;
+    width: 100%;
+    max-width: 1150px;
+}
+
+.glide__arrow {
+    display: block;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #29C4FD;
+    border: 3px solid #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.glide__arrow:hover {
+    cursor: pointer;
+}
+.glide__arrow--left {
+    left: -40px;
+    top: 45%;
+}
+.glide__arrow--right {
+    right: -20px;
+    top: 45%;
+}
+/*//////////////SLIDER/////////////////*/
+@media (max-width: 1920px) {
+    .title {
+        font-size: calc(20px + (36 - 20) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .subtitle {
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .text {
+        font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1920 - 320)));
+        line-height: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
+    }
+    .title_header {
+        margin-top: calc(-20px + (-30 + 20) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+@media (max-width: 1400px) {
+    .portfolio-slider__item img{
+        margin-left: -40px;
+    }
+    .glide__arrow {
+        top: 40%;
+    }
+    .glide__arrow {
+        width: calc(50px + (65 - 50) * ((100vw - 770px) / (1350 - 770)))  ;
+        height: calc(50px + (65 - 50) * ((100vw - 770px) / (1350 - 770))) ;
+    }
+    .glide__arrow svg {
+        width: calc(10px + (30 - 10) * ((100vw - 320px) / (1350 - 320))) ;
+        height: calc(10px + (30 - 10) * ((100vw - 320px) / (1350 - 320))) ;
+    }
+    .glide__arrow--left {
+        background-size: calc(15px + (30 - 15) * ((100vw - 770px) / (1350 - 770))) ;
+        left: calc(5px + (0 + 5) * ((100vw - 320px) / (1400 - 770)));
+    }
+    .glide__arrow--right {
+        background-size: calc(15px + (30 - 15) * ((100vw - 770px) / (1350 - 770))) ;
+        right: calc(15px + (0 + 15) * ((100vw - 320px) / (1400 - 770)));
+    }
+
+}
+@media (max-width: 770px) {
+    .text {
+        text-align: justify;
+    }
+    .portfolio {
+        padding-bottom: calc(50px + (200 - 50) * ((100vw - 320px) / (770 - 320)));;
+    }
+
+    .portfolio__prev svg{
+        width: calc(15px + (29 - 15) * ((100vw - 320px) / (770 - 320)));
+        height: calc(15px + (34 - 15) * ((100vw - 320px) / (770 - 320)));
+    }
+    .title {
+        padding-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (770 - 320)));
+    }
+    .title_header {
+        margin-top: 20px;
+    }
+
+}

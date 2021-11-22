@@ -1,0 +1,126 @@
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #29C4FD;
+}
+.subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #29C4FD;
+}
+.blog__image img {
+    display: inline-block;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 40px;
+
+}
+
+
+.blog__header {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.blog__image_header {
+    margin: 50px;
+
+}
+
+.blog__image_header img {
+    width: 100%;
+    max-width: 850px;
+    border-radius: 40px;
+    transition: 0.3s ease-in;
+}
+.title_blue {
+    text-align: center;
+    transition: 0.3s ease-in;
+}
+.blog__header:hover {
+    cursor: pointer;
+}
+.blog__header:hover > .blog__image_header img{
+    filter: drop-shadow(0px 4px 36px rgba(0, 0, 0, 0.25));
+}
+.blog__header:hover >  .title_blue{
+    transform: scale(1.03);
+}
+
+.title_black {
+    color: #000000;
+}
+.blog__content {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 160px 15px;
+}
+.blog__row {
+    display: flex;
+    justify-content: space-between;
+
+}
+.blog__row:not(:last-child) {
+    margin-bottom: 80px;
+}
+.blog__item {
+    max-width: 640px;
+    border-radius: 40px 40px 20px 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.blog__image {
+    margin-bottom: 40px;
+}
+.blog__image img {
+    transition: 0.3s ease-in;
+}
+.subtitle {
+    transition: 0.3s ease-in;
+}
+.blog__item:hover {
+    cursor: pointer;
+}
+.blog__item:hover > .blog__image img{
+    filter: drop-shadow(0px 4px 36px rgba(0, 0, 0, 0.25));
+}
+.blog__item:hover > .subtitle {
+    transform: scale(1.03);
+}
+@media (max-width: 1920px) {
+    .title {
+        font-size: calc(22px + (48 - 22) * ((100vw - 320px) / (1920 - 320)));
+    }
+
+    .subtitle {
+        font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+@media (max-width: 770px) {
+    .blog__header {
+        padding-top: calc(50px + (70 - 50) * ((100vw - 320px) / (770 - 320)));
+    } .blog__image_header {
+        margin: 0;
+    }
+      .blog__content {
+          padding: calc(50px + (160 - 50) * ((100vw - 320px) / (770 - 320))) 15px;
+      }
+      .blog__row {
+          flex-direction: column;
+      }
+      .blog__row:not(:last-child) {
+          margin-bottom: calc(30px + (80 - 30) * ((100vw - 320px) / (770 - 320)));
+      }
+      .blog__item:not(:last-child) {
+          margin-bottom: calc(30px + (50 - 30) * ((100vw - 320px) / (770 - 320)));
+      }
+}
+

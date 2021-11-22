@@ -14,7 +14,9 @@
         <?php
     } ?>
     <link href="assets/css/public/fonts.css" rel="stylesheet">
+
     <script src="assets/js/public/main.js" async="async"></script>
+    <script src="assets/js/public/glide/dist/glide.min.js"></script>
 </head>
 <body class="body">
 <header class="header">
